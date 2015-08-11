@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12833,10 +12833,10 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <sheets>
 <sheet>
 <plain>
-<text x="178.562" y="11.43" size="1.778" layer="95">L. Buechley</text>
-<text x="167.132" y="11.43" size="1.778" layer="95">N. Seidle</text>
-<text x="169.418" y="7.112" size="1.778" layer="97">Dia Campbell</text>
-<text x="238.76" y="7.62" size="1.778" layer="97">v26</text>
+<text x="178.562" y="11.43" size="1.778" layer="94">L. Buechley</text>
+<text x="167.132" y="11.43" size="1.778" layer="94">N. Seidle</text>
+<text x="169.418" y="7.112" size="1.778" layer="94">Dia Campbell</text>
+<text x="238.76" y="7.62" size="1.778" layer="94">v26</text>
 <wire x1="0" y1="86.36" x2="147.32" y2="86.36" width="0.2032" layer="97" style="longdash"/>
 <wire x1="147.32" y1="86.36" x2="170.18" y2="86.36" width="0.2032" layer="97" style="longdash"/>
 <wire x1="170.18" y1="86.36" x2="248.92" y2="86.36" width="0.2032" layer="97" style="longdash"/>
@@ -12851,7 +12851,10 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
-<instance part="U1" gate="U$1" x="73.66" y="127" smashed="yes"/>
+<instance part="U1" gate="U$1" x="73.66" y="127" smashed="yes">
+<attribute name="NAME" x="53.34" y="160.782" size="1.778" layer="95"/>
+<attribute name="VALUE" x="53.34" y="93.98" size="1.778" layer="96"/>
+</instance>
 <instance part="A2/16" gate="G$1" x="109.22" y="152.4" smashed="yes"/>
 <instance part="A3/17" gate="G$1" x="109.22" y="149.86" smashed="yes"/>
 <instance part="U$35" gate="G$1" x="109.22" y="119.38" smashed="yes"/>
@@ -13148,12 +13151,22 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="U1" gate="U$1" pin="PD0(RXD)"/>
 <label x="104.14" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="3"/>
+<wire x1="215.9" y1="137.16" x2="220.98" y2="137.16" width="0.1524" layer="91"/>
+<label x="220.98" y="137.16" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="TXO" class="0">
 <segment>
 <wire x1="96.52" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U$1" pin="PD1(TXD)"/>
 <label x="104.14" y="132.08" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="215.9" y1="134.62" x2="220.98" y2="134.62" width="0.1524" layer="91"/>
+<label x="220.98" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D5" class="0">
@@ -13198,6 +13211,11 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="20.32" y1="157.48" x2="17.78" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <label x="17.78" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+<label x="220.98" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -13300,7 +13318,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="45.72" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="25.4" x2="20.32" y2="25.4" width="0.1524" layer="91"/>
 <junction x="45.72" y="20.32"/>
-<junction x="20.32" y="20.32"/>
 <pinref part="U2" gate="G$1" pin="VIN"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="D4" gate="G$1" pin="A"/>
