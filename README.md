@@ -3,7 +3,7 @@ LilyPad Arduino Simple
 
 [![LilyPad Arduino Simple Board](https://cdn.sparkfun.com//assets/parts/4/6/6/3/10274-01c.jpg)
 
-*LilyPad Arduino Simple Board (DEV-10274)*](https://www.sparkfun.com/products/10274)
+[*LilyPad Arduino Simple Board (DEV-10274)*](https://www.sparkfun.com/products/10274)
 
 This LilyPad board is smaller than the LilyPad Main Board, with fewer pins. However, it does have a 
 built-in power supply socket, and an on/off switch. 
