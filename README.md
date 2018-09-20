@@ -1,7 +1,7 @@
 LilyPad Arduino Simple
 ======================
 
-[![LilyPad Arduino Simple Board](https://cdn.sparkfun.com//assets/parts/4/6/6/3/10274-01c.jpg)
+![LilyPad Arduino Simple Board](https://cdn.sparkfun.com//assets/parts/4/6/6/3/10274-01c.jpg)
 
 [*LilyPad Arduino Simple Board (DEV-10274)*](https://www.sparkfun.com/products/10274)
 
